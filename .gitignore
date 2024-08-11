@@ -1,4 +1,4 @@
-# Created by https://www.toptal.com/developers/gitignore/api/python
+=-3PwB37B]eT-Nu# Created by https://www.toptal.com/developers/gitignore/api/pythog
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
 ### Python ###
@@ -174,3 +174,6 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python
+
+.direnv/
+.direnv
