@@ -3,7 +3,7 @@
   <input type="text" name="q" placeholder="Search rooms ...." />
 </form>
 
-{% if request.user.is_authenticated %}
+{% if request.user.is_authenticated %} Hello @{{request.user}}
 <a href="{% url 'logout' %}">logout</a>
 {% else %}
 <a href="{% url 'login' %}">login</a>

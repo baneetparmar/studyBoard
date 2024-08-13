@@ -2,7 +2,10 @@
 <hr />
 {% for feed in activity_feed %}
 <div>
-  <small>{{feed.user}} {{feed.created|timesince}} </small>
+  <small
+    ><a href="{% url 'user-profile' feed.user.id %}"> {{feed.user}} </a
+    >{{feed.created|timesince}}
+  </small>
   <small>replied to {{feed.room}}</small>
   <p>{{feed}}</p>
   {% if request.user == feed.user %}
